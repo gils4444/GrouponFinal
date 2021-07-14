@@ -25,8 +25,6 @@ import app.core.exception.CouponSystemException;
 import app.core.service.AdminService;
 import app.core.service.CustomerService;
 import app.core.utilities.JwtUtil;
-// my name is shobi dobi i love cookiesasdfasfafafadS
-// my name is shobi dobi i love cookiesasdfasfafafadS
 @RestController
 @RequestMapping("/admin")
 @CrossOrigin
@@ -40,14 +38,6 @@ public class AdminController {
 		this.service = service;
 	}
 
-//	@PostMapping("/login")
-//	public boolean login(@RequestParam String email, String password) {
-//		try {
-//			return service.login(email, password);
-//		} catch (Exception e) {
-//			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
-//		}
-//	}
 
 	@PostMapping("/add/company")
 	public Company addCompany(@RequestBody Company company,@RequestHeader String token) {
